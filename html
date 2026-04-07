@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Orbit | Planner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="bg-blue-600 p-4 text-white shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">StudySync</h1>
+            <span class="text-sm border border-white px-2 py-1 rounded">Admin Mode</span>
+        </div>
+    </nav>
+
+    <main class="container mx-auto mt-8 px-4">
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h2 class="text-xl font-bold mb-4 text-blue-600">📅 Today's Targets</h2>
+                <ul class="space-y-3">
+                    <li class="flex items-center p-3 bg-gray-50 rounded border-l-4 border-blue-500">
+                        <input type="checkbox" class="mr-3 h-5 w-5">
+                        <span>Complete Modern History: Chapter 5</span>
+                    </li>
+                    <li class="flex items-center p-3 bg-gray-50 rounded border-l-4 border-blue-500">
+                        <input type="checkbox" class="mr-3 h-5 w-5">
+                        <span>Solve 20 Quantitative Aptitude Problems</span>
+                    </li>
+                    <li class="flex items-center p-3 bg-gray-50 rounded border-l-4 border-blue-500">
+                        <input type="checkbox" class="mr-3 h-5 w-5">
+                        <span>Revise Current Affairs (Jan 1-15)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h2 class="text-xl font-bold mb-4 text-green-600">📊 Syllabus Progress</h2>
+                
+                <div class="mb-6">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-sm font-medium">Overall Completion</span>
+                        <span id="progress-text" class="text-sm font-medium">45%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div id="progress-bar" class="bg-green-500 h-4 rounded-full" style="width: 45%"></div>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span>Mathematics</span>
+                        <input type="range" class="accent-green-500" value="60">
+                    </div>
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span>General Science</span>
+                        <input type="range" class="accent-green-500" value="30">
+                    </div>
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span>English Language</span>
+                        <input type="range" class="accent-green-500" value="80">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
